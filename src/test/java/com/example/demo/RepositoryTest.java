@@ -16,12 +16,12 @@ public class RepositoryTest {
     }
     @Test
     public void add() {
-        Customer customer = Customer.builder().name("Hien nek").build();
+        Customer customer = Customer.builder().name("Add").build();
         System.out.println("Them Customer: " + customerRepository.save(customer));
     }
     @Test
     public void update() {
-        Customer customer = Customer.builder().id(1).name("Hien update").build();
+        Customer customer = Customer.builder().id(1).name("Update").build();
         System.out.println("Update Customer: " + customerRepository.save(customer));
     }
     @Test
